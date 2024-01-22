@@ -6,3 +6,10 @@ COPY . .
 
 RUN ./gradlew bootJar --no-daemon
 
+FROM openjdk:17-jdk-slim
+
+EXPOSE 2818
+
+COPY --from=build /build/libs/catGPT-1.jar app.jar
+
+ENTRYPOINT ["java", "-jar", "app.jar"]
