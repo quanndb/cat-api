@@ -16,7 +16,7 @@ public class CorsConfig {
 
         // Đặt các thông tin cấu hình CORS
         config.setAllowCredentials(true);
-        config.addAllowedOrigin("http://localhost:3000");
+        config.addAllowedOrigin("https://quanndb.github.io/CatGPT");
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
 

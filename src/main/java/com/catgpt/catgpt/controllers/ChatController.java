@@ -14,8 +14,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path = "/v1/chat")
-
-
 public class ChatController {
 
     @Autowired
