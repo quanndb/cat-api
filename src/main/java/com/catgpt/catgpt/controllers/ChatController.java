@@ -14,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path = "/v1/chat")
+@CrossOrigin(origins = "https://quanndb.github.io/")
 public class ChatController {
 
     @Autowired
